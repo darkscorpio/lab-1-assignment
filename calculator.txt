@@ -1,0 +1,58 @@
+#include <iostream> 
+using namespace std; 
+void main() 
+{ 
+    char op ;
+	char state;
+    float num1, num2 , i , x; 
+
+	for( ; ; )
+	{
+	
+	cout<<"Enter the operation you wish to do"<<endl;
+    cin >> op; 
+  cout<<"Enter the first num1"<<endl;
+    cin >> num1; 
+	cout<<"Enter the second num2"<<endl;
+	cin>> num2;
+
+	if(op=='+')
+	{
+	x=num1+num2;
+	cout<<"This is the result : "<<x<<endl;
+	}
+
+	else if(op=='-')
+	{
+	x=num1-num2;
+	cout<<"This is the result : "<<x<<endl;
+	}
+
+	else if (op=='*')
+	{
+	x=num1*num2;
+	cout<<"This is the result : "<<x<<endl;
+	}
+
+	else if (op=='/')
+	{
+	if(num2==0)
+	{
+	cout<<"Math error"<<endl;
+	}
+	else{
+	x=num1/num2;
+	cout<<"This is the result : "<<x<<endl;
+	}
+
+	}
+  cout<<"If you wish to do mre calculations enter y if not enter n"<<endl;
+  cin>>state;
+  if(state == 'n')
+  {
+  break;
+  } 
+  x=0;
+	}
+  system("pause");
+}
